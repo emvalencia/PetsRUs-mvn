@@ -66,9 +66,28 @@ public class AllProducts extends HttpServlet {
          while(rs.next()){
 
              /* iterate and display all the products */
+            int id = rs.getInt("id");
             String name = rs.getString("name");
-             String name = rs.getString("name");
-            out.println("Name: " + name + "<br/>");
+            float price = rs.getFloat("price");
+            String type = rs.getString("type");
+            String category = rs.getString("category");
+            String page_url = rs.getString("page_url");
+            String image_url = rs.getString("image_url");
+            String summary = rs.getString("summary");
+            String description = rs.getString("description");
+            String benefits = rs.getString("benefits");
+            
+            out.println("id: " + id + "<br/>");
+            out.println("name: " + name + "<br/>");
+            out.println("price: " + price + "<br/>");
+            out.println("type: " + type + "<br/>");
+            out.println("category: " + category + "<br/>");
+            out.println("page_url: " + page_url + "<br/>");
+            out.println("image_url: " + image_url + "<br/>");
+            out.println("summary: " + summary + "<br/>");
+            out.println("description: " + description + "<br/>");
+            out.println("benefits: " + benefits + "<br/>");
+            out.println("<br/>");
             
             
             
