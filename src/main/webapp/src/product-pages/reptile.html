@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="products.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <script type="text/javascript" src="products.js"></script>
+    <title>Products</title>
+  </head>
+
+    <!-- nav bar -->
+    <div class="navbar2">
+        <a href="/index">Home</a>
+        <a href="../about.html">About</a>
+        <div class="dropdown2">
+            <button class="dropbtn2">Products 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+            <a href="allproducts.html">All</a>
+            <a href="dog.html">Dogs</a>
+            <a href="cat.html">Cats</a>
+            <a href="reptile.html">Reptiles</a>
+            </div>
+        </div> 
+    </div>
+
+<body>
+
+    <!-- container -->
+    <div class="container-fluid">
+
+        <!-- cover image -->
+        <div class="row">
+            <div class="col-lg-12 px-0">
+                <div style="text-align: center;">
+                    <img src="../../assets/reptile-cover.jpg" alt="reptile-cover-photo" class="cover-img"/>
+                    <div class="transparent-box">Reptiles
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- row #1 with table -->
+        <div class="row pt-2">
+                <div class="col-2"></div>
+                <div class="col-8">
+
+            <!-- product table -->
+            <table class="table table-light">
+                <thead class="purple-header">
+                    <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="../../assets/reptile-food.jpg" alt="reptile-food" onclick="handleClick('reptile-food')" class="product-img"/></th>
+                        <td class="text">
+                            <div class="product-title">Zilla Reptile Munchies Vegetable Mix Lizard Food, 4-oz bag</div>
+                            <p>Zilla Reptile Munchies is a tasty and healthy treat for your reptile friend filled with all-natural ingredients.
+                                Each bite is packed with sun-dried bok choy, carrots, green beans, peas, and zucchini, making for the perfect
+                                healthy treat!</p>
+                            <div class="price">$19.99</div>
+                            <button type="button" class="btn btn-secondary btn-md" onclick="handleClick('reptile-food')">More Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="../../assets/reptile-habitat.jpg" alt="reptile-habitat" onclick="handleClick('reptile-habitat')" class="product-img"/></th>
+                        <td class="text">
+                            <div class="product-title">Zilla Tropical Vertical Starter Kit with Mini Halogen Lighting</div>
+                            <p>Zilla’s Tropical Vertical Starter Kit is specially designed for small, tropical tree-living reptiles like tree 
+                                frogs, house geckos, crested geckos and anoles. It comes with a 12” x 12” x 18” glass terrarium that features a 
+                                front door with a locking latch and pin for added safety, and a hinged screen top for easy access to your pet.</p>
+                            <div class="price">$84.99</div>
+                            <button type="button" class="btn btn-secondary btn-md" onclick="handleClick('reptile-habitat')">More Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="../../assets/reptile-meds.jpg" alt="reptile-meds" onclick="handleClick('reptile-meds')" class="product-img"/></th>
+                        <td class="text">
+                            <div class="product-title">Fluker's Repta Boost Insectivore/Carnivore High Amp Boost Reptile Supplement, 1.8-oz</div>
+                            <p>This high-energy supplement is specially formulated to provide "that extra energy boost" for recently acquired animals, 
+                                young fast-growing animals, reproductively active animals or animals on limited diets.</p>
+                            <div class="price">$8.99</div>
+                            <button type="button" class="btn btn-secondary btn-md" onclick="handleClick('reptile-meds')">More Info</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        <div class="col-2"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <div class="footer">
+        <div>Designed and created by Kevin Florio, Emery Valencia, and Jose Vargas.</div>
+        <div>Copyright © 2019 PetsRUs, Inc. All Rights Reserved.</div>
+    </div>
+</html>
