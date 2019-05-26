@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author kflor
@@ -15,30 +9,57 @@ public class Shopping_cart extends HttpServlet {
     
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException {
-        String s, goods[] = {"Fifa 15", "Battlefield 5", "GTA 6"};
-        double price []={10,20,30};
-        double cost;
+       
         PrintWriter out = res.getWriter();
-        res.setContentType("text/html");
-        HttpSession session = req.getSession(true);
+        /*
+        HTML FOR CART:
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Cart Page</title>
+        </head>
+        <body>
 
-        if ( session == null ) return;
-        for (int i = 0; i < goods.length; i++)
-        if ( session.getAttribute(goods[i]) == null )
-            session.setAttribute(goods[i], new Integer(0));
+	<table cellpadding="2" cellspacing="2" border="5">
+		<tr>
+			<th>Option</th>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Photo</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Sub Total</th>
+		</tr>
+		<set var="total" value="0"></set>
+		<forEach var="item" items="${sessionScope.cart }">
+			<set var="total" value="${total + item.product.price * item.quantity }"></set>
+			<tr>
+				<td align="center">
+					<a href="LINK TO REMOVE ITEM"
+					onclick="return confirm('Are you sure?')">Remove</a>
+				</td>
+				<td>Product_ID</td>
+				<td>Product_Name</td>
+				<td>
+					<img src="Product pic" width="120">
+				</td>
+				<td>$_Item_Cost_$</td>
+				<td>Item_Qty</td>
+				<td>$_SubTotal_$</td>
+			</tr>
+		</forEach>
+		<tr>
+			<td colspan="6" align="right">Total</td>
+			<td>$_Total_Amount_$</td>
+		</tr>
+	</table>
+	<br>
+	<a href="LINK BACK TO PRODUCT PAGES">Continue Shopping</a>
 
-        if ( (s = req.getParameter("buy")) != null ) {
-            int n = ((Integer)session.getAttribute(s)).intValue();
-            session.setAttribute(s, new Integer(n + 1));
-        }
-        out.println("<html><body><h2>Shopping Cart</h2><ul>");
-        for (int i = 0; i < goods.length; i++) {
-            int n = ((Integer)session.getAttribute(goods[i])).intValue();
-            if ( n > 0 ){
-                out.println("<li><b>" + goods[i] + "</b> : " + n +":"+ price[i] +"</li>");
-                cost=n*price[i];
-                out.println(cost);}
-            }
-        out.println("</ul></body></html>");
+        </body>
+        </html>
+
+        */
+        
     }
 }
