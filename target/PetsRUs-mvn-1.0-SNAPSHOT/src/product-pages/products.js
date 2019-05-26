@@ -214,6 +214,31 @@ function handleClick(element)
     else if (element == 'reptile-habitat') window.location.href = "reptile-pages/reptile-habitat.html";
     else if (element == 'reptile-meds') window.location.href = "reptile-pages/reptile-meds.html";
     
+    /*
+     * Java Servlet Workaround 
+     */
+    
+    /* switch to main pet page */
+    if (element == 'dog') window.location.href = "src/product-pages/dog.html";
+    else if (element == 'cat') window.location.href = "src/product-pages/cat.html";
+    else if (element == 'reptile') window.location.href = "src/product-pages/reptile.html";
+
+    /* switch to dog pages */
+    else if (element == 1000000004) window.location.href = "src/product-pages/dog-pages/dog-food.html";
+    else if (element == 1000000006) window.location.href = "src/product-pages/dog-pages/dog-toy.html";
+    else if (element == 1000000005) window.location.href = "src/product-pages/dog-pages/dog-harness.html";
+    else if (element == 1000000007) window.location.href = "src/product-pages/dog-pages/dog-treat.html";
+
+    /* switch to cat pages */
+    else if (element == 1000000002) window.location.href = "src/product-pages/cat-pages/cat-food.html";
+    else if (element == 1000000003) window.location.href = "src/product-pages/cat-pages/cat-playground.html";
+    else if (element == 1000000001) window.location.href = "src/product-pages/cat-pages/cat-carrier.html";
+
+    /* switch to reptile pages */
+    else if (element == 1000000008) window.location.href = "src/product-pages/reptile-pages/reptile-food.html";
+    else if (element == 1000000009) window.location.href = "src/product-pages/reptile-pages/reptile-habitat.html";
+    else if (element == 1000000010) window.location.href = "src/product-pages/reptile-pages/reptile-meds.html";
+    
     /* else */
     // window.location.href = "../error-page.html";
 }
