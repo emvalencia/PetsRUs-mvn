@@ -144,7 +144,8 @@ public class Product_Details extends HttpServlet {
             out.println("<div class=\"row pt-2\">");
             out.println("<div class=\"col-2\"></div>");
             out.println("<div class=\"col-8 purple-header\">");
-            out.println("<h3>Purchase Item</h3>");
+            out.println("<h3>Purchase Item</h3>");                                             
+            out.println("<button type =\"button\" onclick=\"alert(\'Added to cart!\')>Add to cart</button>"); /// ADDED BUTTON HERE....but need to add to session somehow...
             out.println("</div>");
             out.println("<div class=\"col-2\"></div>");
             out.println("</div>");
