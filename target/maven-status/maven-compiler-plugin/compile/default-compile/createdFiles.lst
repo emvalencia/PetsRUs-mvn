@@ -1,4 +1,5 @@
 DatabaseAccess.class
 SessionServlet.class
 AllProducts.class
+Product_Details.class
 Shopping_cart.class

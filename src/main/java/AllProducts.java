@@ -61,7 +61,7 @@ public class AllProducts extends HttpServlet {
         out.println("<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"assets/favicon.ico\"/>");
         out.println("<script type=\"text/javascript\" src=\"src/product-pages/products.js\"></script>");
         out.println("<title>Home</title></head>");
-
+        
         /* start html body */
         out.println("<body>");
       
