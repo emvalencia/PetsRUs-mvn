@@ -32,7 +32,7 @@ public class AllProducts extends HttpServlet {
 
       //  Database credentials
       final String USER = "root";
-      final String PASS = "beer";
+      final String PASS = "root";
 
       // Set response content type
       response.setContentType("text/html");

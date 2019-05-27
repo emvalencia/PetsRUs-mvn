@@ -27,7 +27,7 @@ public class Product_Details extends HttpServlet {
         int ID_Num = Integer.parseInt(temp);
         //  Database credentials
         final String USER = "root";
-        final String PASS = "beer";
+        final String PASS = "root";
         
         try{
             if(ID_Num < 1000000001 || ID_Num > 1000000010)
@@ -108,7 +108,7 @@ public class Product_Details extends HttpServlet {
             out.println("<div class=\"row pt-2\">");
             out.println("<div class=\"col-2\"></div>");
             out.println("<div class=\"col-sm\">");
-            out.println("<img src="+ image_url +"/>");                                          /// Specific to page ****************** 
+            out.println("<img src=\"../../../assets/"+ image_url +"/>");                                          /// Specific to page ****************** 
             out.println("</div>");
             out.println("<div class=\"col-sm\">");
             out.println("<h3 id=\"product-description\">"+ name +"</h3>");                      /// Specific to page ******************
