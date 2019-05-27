@@ -164,7 +164,9 @@ public class Product_Details extends HttpServlet {
             out.println("</html>");
             out.println("");
             out.println("");
-        
+        rs.close();
+        stmt.close();
+        conn.close();
         }catch(SQLException se) {
         //Handle errors for JDBC
             se.printStackTrace();

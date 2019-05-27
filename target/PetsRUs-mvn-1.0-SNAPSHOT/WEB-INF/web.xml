@@ -8,8 +8,6 @@
     <servlet-mapping>
         <servlet-name>AllProducts</servlet-name>
         <url-pattern>/AllProducts</url-pattern>
-        <servlet-name>Product_Details</servlet-name>
-        <url-pattern>/Product_Details</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>src/index.html</welcome-file>
@@ -18,8 +16,6 @@
     <servlet>
         <servlet-name>AllProducts</servlet-name>
         <servlet-class>AllProducts</servlet-class>
-        <servlet-name>Product_Details</servlet-name>
-        <servlet-class>Product_Details</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DatabaseAccess</servlet-name>
