@@ -18,7 +18,6 @@ public class Product_Details extends HttpServlet {
       
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-        HttpSession session = req.getSession(true);
         
          // JDBC driver name and database URL
         final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
