@@ -11,7 +11,7 @@ public class Shopping_cart extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException {
        
         PrintWriter out = res.getWriter();
-        
+        HttpSession session = req.getSession(true);
         
         /*
         HTML FOR CART:
