@@ -37,10 +37,10 @@ public class SessionServlet extends HttpServlet {
         HttpSession session = request.getSession();
         
         // if this is a post request, we should add the requested attribute first
-        if(request.getMethod().equals("POST")){
-            // get input parameters and add an attribute
-            session.setAttribute(request.getParameter("attr_name"), request.getParameter("attr_value"));
-        }
+//        if(request.getMethod().equals("POST")){
+//            // get input parameters and add an attribute
+//            session.setAttribute(request.getParameter("attr_name"), request.getParameter("attr_value"));
+//        }
         
         // get all attributes currently saved on the client's machine
         Enumeration<String> attrNames = session.getAttributeNames();
@@ -52,6 +52,14 @@ public class SessionServlet extends HttpServlet {
             out.println(attrName + ": "+ session.getAttribute(attrName));
             out.println("<br>");
         }
+        
+        /*
+        The second servlet should use session tracking to display the last 5 products 
+        that the user has visited (viewed in the product details page). In case this
+        number is less than 5, show whatever amount of information you have stored in 
+        the session. You are required to use servlet "include" feature to implement 
+        this requirement. 
+        */
         
         // produce the form for adding a new attribute. note that method is post.
         out.println("<form method='post' action='sessions'>");
