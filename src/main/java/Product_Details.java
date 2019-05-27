@@ -23,10 +23,11 @@ public class Product_Details extends HttpServlet {
         final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
         final String DB_URL="jdbc:mysql://localhost:3306/petsrus?serverTimezone=UTC";
         String temp = req.getParameter("ID");
-        final int ID_Num = Integer.parseInt(temp);
+        int ID_Num = 0;
+        if (temp != null) ID_Num = Integer.parseInt(temp);
         //  Database credentials
         final String USER = "root";
-        final String PASS = "root";
+        final String PASS = "beer";
         
         try{
             if(ID_Num < 1000000001 || ID_Num > 1000000010)
